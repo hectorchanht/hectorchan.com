@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How I rebuilt RealUFO in 7 days with Claude — Hector</title>
+<meta name="description" content="I paused RealUFO for two months. Then a stranger posted in the discussion board — and I shipped 742 commits in 7 days.">
+<meta property="og:title" content="How I rebuilt RealUFO in 7 days with Claude">
+<meta property="og:description" content="I paused RealUFO for two months. Then a stranger posted in the discussion board — and I shipped 742 commits in 7 days.">
+<meta property="og:type" content="article">
+<link rel="icon" type="image/png" href="/assets/avatar.png">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">H<span class="accent">.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#work">Work</a>
+      <a href="/#hackathon">Hackathon</a>
+      <a href="/#about">About</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <article class="section post-head">
+    <div class="wrap narrow">
+      <a class="back-link" href="/blog/">← All posts</a>
+      <p class="kicker">Oct 5, 2026</p>
+      <h1>How I rebuilt RealUFO in 7 days with Claude</h1>
+      <div class="prose">
+        <p>For about two months, I didn’t touch RealUFO. The archive existed — hundreds of declassified records, sitting there — and I had no idea what it was supposed to become. So I left it alone.</p>
+        <p>Then a stranger posted in the <strong>/board/uap</strong> discussion board. Someone I’d never met cared enough about this weird little archive to write in it. That was the whole spark. I’ve been building intensely ever since.</p>
+
+        <h3>The numbers</h3>
+        <p>The repo has <strong>813 commits over 75 days</strong> — and <strong>742 of them, 91%, landed in the last seven days</strong>. The peak was October 3rd: <strong>327 commits in a single day</strong>, 183 of them features, 71 fixes. Not ingest churn — real features, reviewed and shipped.</p>
+        <p>My working pair through all of it: Claude. I’d describe what I wanted, it would build, I’d test, we’d iterate. Some nights we didn’t stop.</p>
+
+        <h3>What got built</h3>
+        <p>In that week, realufo.org went from a quiet archive to a living site: full-text search with <strong>page-level citations</strong>, AI summaries for every record, discussion boards, a government <strong>release tracker</strong>, a RAG <strong>“ask the archive”</strong> Q&amp;A over 124,000 embedded chunks, email alerts for new releases, SEO and Google indexing, and the deploy pipeline fixed properly.</p>
+        <p>Every one of those was a commit. Most days had over a hundred.</p>
+
+        <h3>What I learned</h3>
+        <p><strong>Ship daily or stall.</strong> The two months of silence taught me more than the sprint did — a project with no momentum is a project you’ve already quit. Daily deploys kept the loop tight: build, see it live, fix, repeat.</p>
+        <p><strong>Let a real user pull you forward.</strong> I didn’t restart because of a roadmap. I restarted because one person showed up. Build the thing, put it where someone can find it, and listen when they knock.</p>
+        <p><strong>AI pair programming is a force multiplier, not a replacement.</strong> I stayed the product mind — every decision, every “does this actually work,” every call on what matters. Claude stayed the hands. The judgment never left the room, because the judgment was mine.</p>
+
+        <hr>
+        <p>I’ve since handed the ongoing care of realufo.org to Muse — monitoring, maintenance, the quiet work. I’m back to building. That’s what I do: <strong>I build things I use, and everyone to use.</strong></p>
+        <p><a href="https://realufo.org" target="_blank" rel="noopener">realufo.org →</a> · <a href="https://github.com/hectorchanht/realufo" target="_blank" rel="noopener">GitHub →</a></p>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Hector · hectorchan.com</p>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>
+</body>
+</html>
