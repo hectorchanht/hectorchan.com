@@ -242,3 +242,10 @@ footer { padding: 2.5rem 0 3rem; color: var(--faint); font-size: 0.95rem; border
 .bc-peak .bc-fill { background: var(--accent); }
 .bc-count { position: absolute; top: 0; font-size: 0.8rem; font-weight: 700; color: var(--text); }
 .bc-day { margin-top: 8px; font-size: 0.7rem; color: var(--faint); white-space: nowrap; }
+
+/* blog post tables */
+.prose table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+.prose th, .prose td { text-align: left; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--line); }
+.prose th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.prose td:nth-child(2), .prose th:nth-child(2), .prose td:last-child, .prose th:last-child { text-align: right; }
+.prose table a { color: var(--text); }
