@@ -209,6 +209,8 @@ footer { padding: 2.5rem 0 3rem; color: var(--faint); font-size: 0.95rem; border
   .post-row { grid-template-columns: 1fr auto; }
   .post-date { grid-column: 1 / -1; }
   .post-arrow { display: none; }
+  .apps-grid { grid-template-columns: 1fr; }
+  .studio-row { flex-direction: column; align-items: flex-start; }
   .menu-btn { display: block; }
   .nav-links {
     display: none; position: absolute; top: 64px; left: 0; right: 0;
@@ -249,3 +251,17 @@ footer { padding: 2.5rem 0 3rem; color: var(--faint); font-size: 0.95rem; border
 .prose th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .prose td:nth-child(2), .prose th:nth-child(2), .prose td:last-child, .prose th:last-child { text-align: right; }
 .prose table a { color: var(--text); }
+
+/* ---------- studio ---------- */
+.studio-row { display: flex; gap: 2rem; align-items: center; }
+.studio-logo { width: clamp(120px, 20vw, 180px); height: auto; border-radius: var(--radius); flex-shrink: 0; }
+
+/* ---------- apps grid ---------- */
+.apps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 0.5rem; }
+.app-card { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; transition: border-color 0.2s, transform 0.2s; }
+.app-card:hover { border-color: rgba(245, 166, 35, 0.4); transform: translateY(-3px); }
+.app-card h3 { font-size: 1.35rem; margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+.app-card h3 a { text-decoration: none; }
+.app-card p { color: var(--muted); margin-bottom: 1rem; font-size: 0.95rem; }
+.app-card .card-links { display: flex; gap: 1.25rem; }
+.app-card .card-links a { font-size: 0.9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }

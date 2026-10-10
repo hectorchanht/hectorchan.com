@@ -24,7 +24,8 @@
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a href="#work">Apps</a>
       <a href="#hackathon">Hackathon</a>
       <a href="#about">About</a>
       <a href="/blog/">Blog</a>
@@ -47,9 +48,22 @@
 </header>
 
 <main>
+  <section id="studio" class="section alt">
+    <div class="wrap">
+      <div class="studio-row reveal">
+        <img class="studio-logo" src="/assets/dawn-studio-mark.webp" alt="Dawn Studio logo — a sunrise rising over the letter D" width="360" height="360">
+        <div>
+          <p class="kicker">The company</p>
+          <h2>Dawn Studio</h2>
+          <p class="lede">My one-person software studio — the company behind all my apps. Small, honest tools for life between currencies, markets, and time zones. Shipped fast, priced fairly, no dark patterns. Honest is my weakness — and my edge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="work" class="section">
     <div class="wrap">
-      <h2 class="reveal">Selected work</h2>
+      <h2 class="reveal">Apps</h2>
+      <p class="lede reveal" style="margin-bottom:2rem">Everything below is live, free to use, and built by Dawn Studio.</p>
 
       <article class="card featured reveal">
         <div class="card-top">
@@ -70,53 +84,70 @@
         </div>
       </article>
 
-      <article class="card reveal">
-        <div class="card-top">
-          <span class="tag dim">Technical showcase</span>
-        </div>
-        <h3><a href="https://openmusic.hectorchan.com" target="_blank" rel="noopener">openmusic</a></h3>
-        <p class="card-desc">A mobile-first music streaming app — TypeScript/Svelte, Android build, Cloudflare deployment, 15-language UI, multiple music sources. A demo / educational build, shared as a technical showcase.</p>
-        <div class="card-links">
-          <a href="https://openmusic.hectorchan.com" target="_blank" rel="noopener">Visit site →</a>
-          <a href="https://github.com/hectorchanht/openmusic" target="_blank" rel="noopener">GitHub →</a>
-        </div>
-      </article>
-
-      <article class="card reveal">
-        <div class="card-top">
-          <span class="tag dim">Side project</span>
-        </div>
-        <h3><a href="https://moneyrate.hectorchan.com" target="_blank" rel="noopener">moneyrate</a></h3>
-        <p class="card-desc">A fiat + crypto currency converter that runs entirely in your browser — no accounts, no backend. Real-time conversion across currencies, crypto and commodities, interactive charts with CSV export, drag-and-drop currency management. TypeScript.</p>
-        <div class="card-links">
-          <a href="https://moneyrate.hectorchan.com" target="_blank" rel="noopener">Visit site →</a>
-          <a href="https://github.com/hectorchanht/moneyrate" target="_blank" rel="noopener">GitHub →</a>
-        </div>
-      </article>
-
-      <article class="card reveal">
-        <div class="card-top">
-          <span class="tag dim">Side project</span>
-        </div>
-        <h3><a href="https://holdr.hectorchan.com" target="_blank" rel="noopener">Holdr</a></h3>
-        <p class="card-desc">A stock portfolio tracker for diamond hands — syncs Interactive Brokers Flex reports, logs manual trades, converts 12 currencies for display, allocation breakdowns, a WSB mode for fun, and AI-generated portfolio insights. Next.js + Cloudflare.</p>
-        <div class="card-links">
-          <a href="https://holdr.hectorchan.com" target="_blank" rel="noopener">Visit site →</a>
-          <a href="https://github.com/hectorchanht/holdr" target="_blank" rel="noopener">GitHub →</a>
-        </div>
-      </article>
-
-      <article class="card reveal">
-        <div class="card-top">
-          <span class="tag dim">Side project</span>
-        </div>
-        <h3><a href="https://openq.hectorchan.com" target="_blank" rel="noopener">OpenQ</a></h3>
-        <p class="card-desc">A forum in a queue — live Q&A for events. The audience asks from their phones and upvotes the best questions to the front while the host works the queue. Pseudonymous authors, live polls, threaded replies, per-person vote budgets, a private thought heap for half-formed ideas, and a projector mode for the big screen. Gun.js + Next.js.</p>
-        <div class="card-links">
-          <a href="https://openq.hectorchan.com" target="_blank" rel="noopener">Visit site →</a>
-          <a href="https://github.com/hectorchanht/openq" target="_blank" rel="noopener">GitHub →</a>
-        </div>
-      </article>
+<div class="apps-grid">
+        <article class="app-card reveal">
+          <h3><a href="https://moneyrate.lol" target="_blank" rel="noopener">MoneyRate</a></h3>
+          <p>Currency converter for life between currencies — fiat, crypto and commodities, interactive charts, rate alerts, trip tools.</p>
+          <div class="card-links">
+            <a href="https://moneyrate.lol" target="_blank" rel="noopener">Visit →</a>
+            <a href="https://github.com/hectorchanht/moneyrate" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+        <article class="app-card reveal">
+          <h3><a href="https://holdr.lol" target="_blank" rel="noopener">Holdr</a></h3>
+          <p>Diamond-hands portfolio tracker — IBKR Flex sync, manual trades, 12 currencies, allocation breakdowns, AI insights.</p>
+          <div class="card-links">
+            <a href="https://holdr.lol" target="_blank" rel="noopener">Visit →</a>
+            <a href="https://github.com/hectorchanht/holdr" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+        <article class="app-card reveal">
+          <h3><a href="https://clipbin.lol" target="_blank" rel="noopener">ClipBin</a></h3>
+          <p>Your private clipboard, on cloud or local — save and organize text snippets, free.</p>
+          <div class="card-links">
+            <a href="https://clipbin.lol" target="_blank" rel="noopener">Visit →</a>
+            <a href="https://github.com/hectorchanht/clipbin" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+        <article class="app-card reveal">
+          <h3><a href="https://pennyvest.space" target="_blank" rel="noopener">Pennyvest</a></h3>
+          <p>Investment education in EN/繁中 — four themed model portfolios with live prices, news and AI notes.</p>
+          <div class="card-links">
+            <a href="https://pennyvest.space" target="_blank" rel="noopener">Visit →</a>
+            <a href="https://github.com/hectorchanht/pennyvest" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+        <article class="app-card reveal">
+          <h3><a href="https://watchthenight.com" target="_blank" rel="noopener">Watch the Night</a></h3>
+          <p>The stargazing gear guide I wish someone had handed me — telescopes, binoculars, star trackers and accessories.</p>
+          <div class="card-links">
+            <a href="https://watchthenight.com" target="_blank" rel="noopener">Visit →</a>
+          </div>
+        </article>
+        <article class="app-card reveal">
+          <h3><a href="https://globalnewsshorts.com" target="_blank" rel="noopener">Global News Shorts</a></h3>
+          <p>The important USA and world news, in short videos — daily clips, straight to the point.</p>
+          <div class="card-links">
+            <a href="https://globalnewsshorts.com" target="_blank" rel="noopener">Visit →</a>
+          </div>
+        </article>
+        <article class="app-card reveal">
+          <h3><a href="https://openmusic.hectorchan.com" target="_blank" rel="noopener">openmusic</a></h3>
+          <p>Mobile-first music streaming app — Svelte, Android build, Cloudflare deployment, 15-language UI.</p>
+          <div class="card-links">
+            <a href="https://openmusic.hectorchan.com" target="_blank" rel="noopener">Visit →</a>
+            <a href="https://github.com/hectorchanht/openmusic" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+        <article class="app-card reveal">
+          <h3><a href="https://openq.hectorchan.com" target="_blank" rel="noopener">OpenQ</a></h3>
+          <p>The forum in a queue — live event Q&A. The audience asks from their phones and upvotes the best questions.</p>
+          <div class="card-links">
+            <a href="https://openq.hectorchan.com" target="_blank" rel="noopener">Visit →</a>
+            <a href="https://github.com/hectorchanht/openq" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -151,6 +182,7 @@
         <p>I’m Hector — a creator. I build things I use, and I build them so everyone can use them.</p>
         <p>My work is independent and open: if I make it, the code is public and the site is free. No location, no office — I can be anywhere.</p>
         <p>Right now that means <a href="https://realufo.org" target="_blank" rel="noopener">realufo.org</a>: taking half a century of declassified government records and making them searchable, citable, and actually readable.</p>
+        <p>Everything I ship goes out under <strong>Dawn Studio</strong> — my one-person software company.</p>
       </div>
     </div>
   </section>
@@ -186,7 +218,7 @@
 
 <footer>
   <div class="wrap">
-    <p>© 2026 Hector · hectorchan.com</p>
+    <p>© 2026 Dawn Studio · hectorchan.com</p>
   </div>
 </footer>
 
