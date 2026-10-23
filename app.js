@@ -87,11 +87,11 @@
     sections.forEach(function (s) { so.observe(s); });
   }
 
-  /* hidden admin shortcut: double-click the footer tagline → Dawn Studio admin. No visual change. */
+  /* hidden shortcut: double-click the footer tagline → this site's own console. No visual change. */
   var footerTag = document.querySelector("footer p");
   if (footerTag) {
     footerTag.addEventListener("dblclick", function () {
-      window.location.href = "https://dawnstudio.app/admin";
+      window.location.href = "/admin/";
     });
   }
 })();
