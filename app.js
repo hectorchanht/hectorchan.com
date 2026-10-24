@@ -95,3 +95,8 @@
     });
   }
 })();
+
+// PWA: register the service worker (offline shell). Best-effort.
+if ("serviceWorker" in navigator) {
+  try { navigator.serviceWorker.register("/sw.js"); } catch (e) { /* ignore */ }
+}
