@@ -292,6 +292,6 @@ footer { padding: 2.5rem 0 3rem; color: var(--faint); font-size: 0.95rem; border
 .app-card:active { transform: scale(.98); }
 .card-links a:active, .big-link:active { opacity: .7; }
 h1, h2, h3 { text-wrap: balance; }
-footer .legal { color: var(--muted); font-size: 0.9rem; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
+footer .legal { color: var(--muted); font-size: 0.9rem; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; margin-left: 1rem; }
 footer .legal:hover { color: var(--accent); }
 footer .wrap p { display: inline-block; }
