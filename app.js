@@ -6,12 +6,18 @@
   var menuBtn = document.getElementById("menuBtn");
   var navLinks = document.getElementById("navLinks");
 
-  /* sticky nav background */
-  function onScroll() {
-    nav.classList.toggle("scrolled", window.scrollY > 24);
+  /* sticky nav background: IntersectionObserver on a top sentinel, no scroll listener */
+  var sentinel = document.createElement("div");
+  sentinel.setAttribute("aria-hidden", "true");
+  sentinel.style.cssText = "position:absolute;top:0;left:0;width:1px;height:24px;pointer-events:none;";
+  document.body.prepend(sentinel);
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (entries) {
+      nav.classList.toggle("scrolled", !entries[0].isIntersecting);
+    }).observe(sentinel);
+  } else {
+    nav.classList.add("scrolled");
   }
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
 
   /* mobile menu */
   if (menuBtn) {
