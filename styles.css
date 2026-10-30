@@ -211,24 +211,6 @@ footer { padding: 2.5rem 0 3rem; color: var(--faint); font-size: 0.95rem; border
   html { scroll-behavior: auto; }
 }
 
-/* ---------- responsive ---------- */
-@media (max-width: 760px) {
-  .stats { grid-template-columns: 1fr 1fr; }
-  .feat { grid-template-columns: 1fr; }
-  .post-row { grid-template-columns: 1fr auto; }
-  .post-date { grid-column: 1 / -1; }
-  .post-arrow { display: none; }
-  .apps-grid { grid-template-columns: 1fr; }
-  .studio-row { flex-direction: column; align-items: flex-start; }
-  .menu-btn { display: block; }
-  .nav-links {
-    display: none; position: absolute; top: 64px; left: 0; right: 0;
-    flex-direction: column; gap: 0; background: rgba(11, 13, 18, 0.97);
-    border-bottom: 1px solid var(--line); padding: 0.5rem 0;
-  }
-  .nav-links.open { display: flex; }
-  .nav-links a { padding: 0.9rem 1.5rem; font-size: 1.1rem; }
-}
 
 /* commit charts (github-style) */
 .chart { margin: 2rem 0; padding: 1.25rem; background: var(--surface);
@@ -295,3 +277,25 @@ h1, h2, h3 { text-wrap: balance; }
 footer .legal { color: var(--muted); font-size: 0.9rem; text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 2px; margin-left: 1rem; }
 footer .legal:hover { color: var(--accent); }
 footer .wrap p { display: inline-block; }
+
+/* Overflow guard: nothing may push the page sideways on mobile */
+html, body { overflow-x: clip; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 760px) {
+  .stats { grid-template-columns: 1fr 1fr; }
+  .feat { grid-template-columns: 1fr; }
+  .post-row { grid-template-columns: 1fr auto; }
+  .post-date { grid-column: 1 / -1; }
+  .post-arrow { display: none; }
+  .apps-grid { grid-template-columns: 1fr; }
+  .studio-row { flex-direction: column; align-items: flex-start; }
+  .menu-btn { display: block; }
+  .nav-links {
+    display: none; position: absolute; top: 64px; left: 0; right: 0;
+    flex-direction: column; gap: 0; background: rgba(11, 13, 18, 0.97);
+    border-bottom: 1px solid var(--line); padding: 0.5rem 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 0.9rem 1.5rem; font-size: 1.1rem; }
+}
