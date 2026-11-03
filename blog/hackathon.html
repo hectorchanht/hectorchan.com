@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=4">
+<link rel="stylesheet" href="/styles.css?v=6">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -26,11 +26,12 @@
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="/">H<span class="accent">.</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="/#work">Work</a>
+      <a href="/#studio">Studio</a>
+      <a href="/#work">Apps</a>
       <a href="/#hackathon">Hackathon</a>
       <a href="/#about">About</a>
       <a href="/blog/">Blog</a>
@@ -43,13 +44,13 @@
   <article class="section post-head">
     <div class="wrap narrow">
       <a class="back-link" href="/blog/">← All posts</a>
-      <p class="kicker">Oct 5, 2026</p>
       <h1>How I rebuilt RealUFO in 7 days with Claude</h1>
+      <p class="post-meta"><time datetime="2026-10-05">Oct 5, 2026</time></p>
       <div class="prose">
         <p>For about two months, I didn’t touch RealUFO. The archive existed — hundreds of declassified records, sitting there — and I had no idea what it was supposed to become. So I left it alone.</p>
         <p>Then a stranger posted in the <strong>/board/uap</strong> discussion board. Someone I’d never met cared enough about this weird little archive to write in it. That was the whole spark. I’ve been building intensely ever since.</p>
 
-        <h3>The numbers</h3>
+        <h2>The numbers</h2>
         <p>The repo has <strong>811 commits over 75 days</strong> — and <strong>740 of them, 91%, landed in six days</strong>. The peak was October 2nd: <strong>306 commits in a single day</strong>. Not ingest churn — real features, reviewed and shipped.</p>
         <p>My working pair through all of it: Claude. I’d describe what I wanted, it would build, I’d test, we’d iterate. Some nights we didn’t stop.</p>
 
@@ -69,16 +70,16 @@
           <div class="bc-wrap" role="img" aria-label="Daily commits bar chart"><div class="bc-bar"><span class="bc-count">8</span><span class="bc-fill" style="height:3%"></span><span class="bc-day">Oct 01</span></div><div class="bc-bar bc-peak"><span class="bc-count">306</span><span class="bc-fill" style="height:100%"></span><span class="bc-day">Oct 02</span></div><div class="bc-bar"><span class="bc-count">288</span><span class="bc-fill" style="height:94%"></span><span class="bc-day">Oct 03</span></div><div class="bc-bar"><span class="bc-count">99</span><span class="bc-fill" style="height:32%"></span><span class="bc-day">Oct 04</span></div><div class="bc-bar"><span class="bc-count">31</span><span class="bc-fill" style="height:10%"></span><span class="bc-day">Oct 05</span></div><div class="bc-bar"><span class="bc-count">8</span><span class="bc-fill" style="height:3%"></span><span class="bc-day">Oct 06</span></div></div>
           <figcaption>The sprint week, day by day. Oct 2nd: 306 commits — the peak.</figcaption>
         </figure>
-        <h3>What got built</h3>
+        <h2>What got built</h2>
         <p>In that week, realufo.org went from a quiet archive to a living site: full-text search with <strong>page-level citations</strong>, AI summaries for every record, discussion boards, a government <strong>release tracker</strong>, a RAG <strong>“ask the archive”</strong> Q&amp;A over 124,000 embedded chunks, email alerts for new releases, SEO and Google indexing, and the deploy pipeline fixed properly.</p>
         <p>Every one of those was a commit. Most days had over a hundred.</p>
 
-        <h3>The moment</h3>
+        <h2>The moment</h2>
         <p>Some nights I open a UFO video and go frame by frame, hunting for the thing that crosses the screen in a fraction of a second. Then I see it — a shape, gone in two frames, moving too fast for any eye to catch in real time.</p>
         <p>That is the moment I see what my work is worth. I built the archive that holds that footage. Searchable, watchable, real. I did something useful — and I enjoy every second of it.</p>
         <p>I don't know if what I saw is a UFO. But I know someone, someday, will sit down with these records and go frame by frame too. The archive will be there, because I built it.</p>
 
-        <h3>What I learned</h3>
+        <h2>What I learned</h2>
         <p><strong>Ship daily or stall.</strong> The two months of silence taught me more than the sprint did — a project with no momentum is a project you’ve already quit. Daily deploys kept the loop tight: build, see it live, fix, repeat.</p>
         <p><strong>Let a real user pull you forward.</strong></p>
         <p class="core-phrase"><mark>I didn’t restart because of a roadmap. I restarted because one person showed up.</mark></p>

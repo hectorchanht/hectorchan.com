@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=4">
+<link rel="stylesheet" href="/styles.css?v=6">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -34,7 +34,7 @@
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="/">H<span class="accent">.</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
@@ -50,10 +50,9 @@
 
 <header class="hero">
   <div class="wrap">
-    <img class="avatar reveal" src="/assets/avatar.png" alt="Hector's avatar" width="160" height="160">
-    <p class="kicker reveal">Hector · creator</p>
+    <img class="avatar reveal" src="/assets/avatar-320.webp" alt="Hector's avatar" width="160" height="160">
     <h1 class="reveal">Building things I use<br>and <span class="accent">everyone</span> to use.</h1>
-    <p class="lede reveal">Independent projects, open source, shipped fast. Currently: an archive of declassified UFO records anyone can search.</p>
+    <p class="lede reveal">I’m Hector, a creator. Independent projects, open source, shipped fast. Currently: an archive of declassified UFO records anyone can search.</p>
     <div class="cta-row reveal">
       <a class="btn" href="#work">See my work</a>
       <a class="btn ghost" href="#contact">Get in touch</a>
@@ -65,9 +64,8 @@
   <section id="studio" class="section alt">
     <div class="wrap">
       <div class="studio-row reveal">
-        <img class="studio-logo" src="/assets/dawn-studio-logo.png" alt="Dawn Studio logo" width="256" height="256">
+        <img class="studio-logo" loading="lazy" decoding="async" src="/assets/dawn-studio-logo.png" alt="Dawn Studio logo" width="256" height="256">
         <div>
-          <p class="kicker">The company</p>
           <h2>Dawn Studio</h2>
           <p class="lede">My one-person software studio — the company behind all my apps. Small, honest tools for life between currencies, markets, and time zones. Shipped fast, priced fairly, no dark patterns. Honest is my weakness — and my edge.</p>
         </div>
@@ -77,7 +75,7 @@
   <section id="work" class="section">
     <div class="wrap">
       <h2 class="reveal">Apps</h2>
-      <p class="lede reveal" style="margin-bottom:2rem">Everything below is live, free to use, and built by Dawn Studio.</p>
+      <p class="lede reveal">Everything below is live, free to use, and built by Dawn Studio.</p>
 
       <article class="card featured reveal">
         <div class="card-top">
@@ -167,15 +165,14 @@
 
   <section id="hackathon" class="section alt">
     <div class="wrap">
-      <p class="kicker reveal">The story</p>
       <h2 class="reveal">The RealUFO hackathon</h2>
       <p class="lede reveal">I paused the project for two months, not knowing what it could become. Then a stranger posted in the discussion board — and I never stopped building. What followed was a 7-day sprint with Claude as my pair.</p>
 
       <div class="stats">
-        <div class="stat reveal"><span class="num" data-count="813">0</span><span class="lbl">commits in 75 days</span></div>
-        <div class="stat reveal"><span class="num" data-count="742">0</span><span class="lbl">commits in the last 7 days</span></div>
-        <div class="stat reveal"><span class="num" data-count="327">0</span><span class="lbl">commits on peak day · Oct 3</span></div>
-        <div class="stat reveal"><span class="num" data-count="91">0</span><span class="lbl">% of work shipped in one week</span></div>
+        <div class="stat reveal"><span class="num" data-count="813">813</span><span class="lbl">commits in 75 days</span></div>
+        <div class="stat reveal"><span class="num" data-count="742">742</span><span class="lbl">commits in the last 7 days</span></div>
+        <div class="stat reveal"><span class="num" data-count="327">327</span><span class="lbl">commits on peak day · Oct 3</span></div>
+        <div class="stat reveal"><span class="num" data-count="91">91</span><span class="lbl">% of work shipped in one week</span></div>
       </div>
 
       <div class="timeline">
@@ -190,7 +187,7 @@
   </section>
 
   <section id="about" class="section">
-    <div class="wrap narrow">
+    <div class="wrap">
       <h2 class="reveal">About</h2>
       <div class="reveal">
         <p>I’m Hector — a creator. I build things I use, and I build them so everyone can use them.</p>
@@ -219,7 +216,7 @@
   </section>
 
   <section id="contact" class="section">
-    <div class="wrap narrow">
+    <div class="wrap">
       <h2 class="reveal">Contact</h2>
       <p class="lede reveal">The fastest way to reach me is email.</p>
       <p class="reveal"><a class="big-link" href="mailto:hello@hectorchan.com">hello@hectorchan.com</a></p>

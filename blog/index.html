@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=4">
+<link rel="stylesheet" href="/styles.css?v=6">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -28,14 +28,15 @@
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="/">H<span class="accent">.</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="/#work">Work</a>
+      <a href="/#studio">Studio</a>
+      <a href="/#work">Apps</a>
       <a href="/#hackathon">Hackathon</a>
       <a href="/#about">About</a>
-      <a href="/blog/">Blog</a>
+      <a href="/blog/" aria-current="page">Blog</a>
       <a href="/#contact">Contact</a>
     </div>
   </div>
@@ -44,7 +45,6 @@
 <main id="main">
   <section class="section post-head">
     <div class="wrap narrow">
-      <p class="kicker">Blog</p>
       <h1>Notes on building in the open.</h1>
       <p class="lede">Short posts, shipped when there’s something worth saying.</p>
     </div>

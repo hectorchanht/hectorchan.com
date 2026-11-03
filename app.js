@@ -25,8 +25,15 @@
       var open = navLinks.classList.toggle("open");
       menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
     });
+    function closeMenu() {
+      navLinks.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+    }
     navLinks.addEventListener("click", function (e) {
-      if (e.target.tagName === "A") navLinks.classList.remove("open");
+      if (e.target.tagName === "A") closeMenu();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && navLinks.classList.contains("open")) { closeMenu(); menuBtn.focus(); }
     });
   }
 
@@ -60,8 +67,11 @@
     }
     requestAnimationFrame(frame);
   }
+  /* real numbers ship in the HTML; only animate from 0 when motion is allowed */
   var nums = document.querySelectorAll(".num[data-count]");
-  if ("IntersectionObserver" in window && nums.length) {
+  var calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if ("IntersectionObserver" in window && nums.length && !calm) {
+    nums.forEach(function (el) { el.textContent = "0"; });
     var co = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting) {

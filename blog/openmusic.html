@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=4">
+<link rel="stylesheet" href="/styles.css?v=6">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -26,11 +26,12 @@
 <nav class="nav" id="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="/">H<span class="accent">.</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-links" id="navLinks">
-      <a href="/#work">Work</a>
+      <a href="/#studio">Studio</a>
+      <a href="/#work">Apps</a>
       <a href="/#hackathon">Hackathon</a>
       <a href="/#about">About</a>
       <a href="/blog/">Blog</a>
@@ -43,18 +44,18 @@
   <article class="section post-head">
     <div class="wrap narrow">
       <a class="back-link" href="/blog/">&larr; All posts</a>
-      <p class="kicker">Oct 6, 2026</p>
       <h1>I built a free music streaming app &mdash; and I still can't believe it works</h1>
+      <p class="post-meta"><time datetime="2026-10-06">Oct 6, 2026</time></p>
       <div class="prose">
         <p>I made <strong>openmusic</strong>. A music streaming app that is totally free and plays almost any song on the internet. Type it, it plays. Lock your phone, it keeps playing. No account, no subscription, no tab-hopping.</p>
         <p>I still can't believe it works.</p>
 
-        <h3>How it works</h3>
+        <h2>How it works</h2>
         <p>One search box. <strong>Eight music catalogs</strong>: NetEase, QQ, Kuwo, JOOX, 5sing, Jamendo, Audius, and YouTube Music. One search hits all of them at once, duplicates get merged, and the best-quality copy wins. If a source goes down, it quietly tries another one. The next song is already loading before the current one ends.</p>
         <p>Synced lyrics scroll as the song plays &mdash; wrong lyrics, you pick others; off by a beat, you nudge them. Songs and whole albums download for offline, tagged with cover and lyrics. There is a sleep timer with a gentle fade-out, comments on every song, and covers voted on by the crowd. It speaks <strong>15 languages</strong>, including both &#32321;&#39636;&#20013;&#25991; and &#31616;&#20307;&#20013;&#25991;, and the two are interconvertible with one tap.</p>
         <p>It is a SvelteKit app that runs in the browser at <strong>openmusic.lol</strong>, plus an Android APK you can download straight from the site. One &lt;audio&gt; element does all the playing.</p>
 
-        <h3>The numbers</h3>
+        <h2>The numbers</h2>
         <p>The repo has <strong>1,073 commits in 12 weeks</strong> &mdash; and <strong>870 of them landed in 27 days</strong>, from September 10th to today. The peak was September 26th: <strong>131 commits in a single day</strong>. The test suite sits at <strong>4,020 passing, zero failing</strong>. It started as a fork in June. On October 6th I detached it &mdash; it is its own repo now, Apache 2.0, mine from the ground up.</p>
         <p>Most of the commits were built the same way I build everything lately: I describe what I want, Claude builds, I test, we iterate. The judgment on what matters stayed mine. The hands did the typing.</p>
 
@@ -73,7 +74,7 @@
           <figcaption>The 27-day stretch, day by day. Sep 26th: 131 commits &mdash; the peak.</figcaption>
         </figure>
 
-        <h3>What I learned</h3>
+        <h2>What I learned</h2>
         <p><strong>Free beats fancy.</strong> Nobody wants another login screen, another plan picker, another trial expiring. People want the song to play when they tap it. That bar is lower than the industry pretends and higher than most free apps reach.</p>
         <p><strong>Resilience is a feature.</strong> Every source dies eventually &mdash; APIs change, quotas vanish, regions block. Instead of one fragile pipeline, openmusic has eight. A source goes down and the app just... tries another. Users never notice.</p>
         <p><strong>Build the thing you want to use.</strong> I built openmusic because I wanted to hear any song without paying for three subscriptions and still not finding it. Turns out I am not the only one who wanted that.</p>
