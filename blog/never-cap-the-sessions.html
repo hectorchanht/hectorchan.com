@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Never Cap the Sessions &mdash; Hector</title>
+<meta name="description" content="My desktop on a normal evening: a wall of AI sessions, 52 GB of RAM gone, 2,181 sessions in 30 days. People say running that many AIs is hard. It is. The answer is not fewer sessions.">
+<meta property="og:title" content="Never cap the sessions">
+<meta property="og:description" content="My desktop on a normal evening: a wall of AI sessions, 52 GB of RAM gone, 2,181 sessions in 30 days. People say running that many AIs is hard. It is. The answer is not fewer sessions.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://hectorchan.com/blog/never-cap-the-sessions.html">
+<meta property="og:image" content="https://hectorchan.com/assets/avatar.png">
+<link rel="canonical" href="https://hectorchan.com/blog/never-cap-the-sessions.html">
+<meta name="robots" content="index, follow">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hectorchan.com/assets/avatar.png">
+<link rel="icon" type="image/png" href="/assets/avatar.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=7">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">H<span class="accent">.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#studio">Studio</a>
+      <a href="/#work">Apps</a>
+      <a href="/#hackathon">Hackathon</a>
+      <a href="/#about">About</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+  <article class="section post-head">
+    <div class="wrap narrow">
+      <a class="back-link" href="/blog/">&larr; All posts</a>
+      <h1>Never cap the sessions</h1>
+      <p class="post-meta"><time datetime="2026-11-17">Nov 17, 2026</time></p>
+      <div class="prose">
+        <figure class="photo">
+          <img src="/blog/img/sessions-wall.jpg" alt="A Mac desktop covered in overlapping terminal windows, each one an AI coding session at work" width="1600" height="899" />
+          <figcaption>My desktop, November 17, 2026. Every window is an AI session working on something — a hotel portal, a crawler, a game, this site. This is not a mess. This is the factory floor.</figcaption>
+        </figure>
+        <p>People see this screenshot and ask how I keep track of it all. Honest answer: I don't track the windows. I track the board.</p>
+        <p>I am one person. I don't write most of the code anymore. I decide what gets built, I correct course, I approve what ships. The sessions do the rest — in parallel, all the time. In the last 30 days my coding agent alone ran 2,181 sessions. Not 2,181 prompts. Sessions.</p>
+        <h2>“Running that many AIs must be hard”</h2>
+        <p>It is. I said exactly that today, looking at this screen. Every session eventually comes back with a question, a decision, a “your turn.” A dozen sessions means a dozen queues, all of them pointing at one human.</p>
+        <p>But here is the thing nobody gets: the hard part is not the number of sessions. The hard part would be shipping all of this with three.</p>
+        <p class="core-phrase"><mark>Active sessions are never capped. That is the source of my productivity.</mark></p>
+        <p>A cap sounds like discipline. It is not. A cap is a queue of work that hasn't started, ideas going stale while they wait for a slot. My bottleneck was never ideas, and it was never code. It was one pair of hands. The sessions removed the hands from the equation. Capping them puts the hands back.</p>
+        <h2>The board is the single pane</h2>
+        <p>What makes unlimited parallel manageable is not a bigger screen. It is a contract. Every session I spawn works in its own worktree and ends with exactly one of two lines:</p>
+        <blockquote>
+          <p>AGENT-BOARD: DONE — what shipped, and how it was verified.<br />AGENT-BOARD: BLOCKED — what is missing, and what it needs from me.</p>
+        </blockquote>
+        <p>The agent board collects those reports into one pane. I read reports, not terminals. The wall of windows sits behind the board, and I almost never look at it directly — except on evenings like this one, when I screenshot it because, honestly, it looks iconic.</p>
+        <figure class="photo">
+          <img src="/blog/img/claude-app-context.jpg" alt="The Claude app open on a session about first-principles rules, with the context panel showing usage" width="1600" height="1035" loading="lazy" />
+          <figcaption>One of the quieter windows: a session teaching my own rules back into the system — first principles, written into the standing instructions while a dozen other sessions ran next door.</figcaption>
+        </figure>
+        <h2>The machine pays for it. Good.</h2>
+        <p>None of this is free, and the Activity Monitor does not lie about it:</p>
+        <figure class="photo">
+          <img src="/blog/img/activity-monitor-memory.jpg" alt="Activity Monitor memory view: 64 GB physical memory, about 52 GB used, about 24 GB compressed, about 4 GB swap used" width="1600" height="2615" loading="lazy" />
+          <figcaption>64 GB of physical memory. About 52 GB used. About 24 GB compressed — the Mac squeezing memory hard to pretend it has more. About 4 GB of swap on top.</figcaption>
+        </figure>
+        <p>People look at numbers like that and suggest closing some sessions to “give the machine a break.” That is solving the wrong problem. RAM is a hardware problem — the fix is more RAM. Quota is a plan problem — the fix is a bigger plan. Sessions are the product. You do not fix a factory by switching off machines.</p>
+        <h2>The rule going forward</h2>
+        <p>So the wall stays. It will probably get bigger. One architect, one board, as many sessions as the work needs.</p>
+        <p>Cap the meetings. Cap the context switches. Never cap the sessions.</p>
+        <p><em>New rule, starting with this post: every post on this blog carries at least one photo. Screenshots are the receipts.</em></p>
+        <hr>
+        <p><a href="https://github.com/hectorchanht" target="_blank" rel="noopener">GitHub →</a></p>
+        <p><em>Screenshots are from my own Mac, November 17, 2026. Session count from my coding agent's 30-day statistics.</em></p>
+      
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Hector &middot; hectorchan.com</p>
+    <p><a class="legal" href="/privacy.html">Privacy</a></p>
+  </div>
+</footer>
+
+<script src="/app.js?v=3" defer></script>
+</body>
+</html>
