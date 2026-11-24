@@ -326,7 +326,7 @@ html, body { overflow-x: clip; }
   display: block; max-width: 100%; height: auto; max-height: 480px;
   object-fit: contain; margin-inline: auto;
 }
-.prose figure.photo:first-of-type img { width: 100%; height: 480px; object-fit: cover; }
+.prose figure.photo:first-of-type img { width: 100%; object-fit: cover; }
 .prose figcaption {
   font-family: var(--font); font-size: 0.85rem; line-height: 1.5;
   color: var(--faint); text-align: center; margin-top: 0.75rem;
@@ -334,5 +334,4 @@ html, body { overflow-x: clip; }
 @media (max-width: 640px) {
   .prose { font-size: 1.125rem; }
   .prose figure.photo img, .prose > img, .prose p img { max-height: 300px; }
-  .prose figure.photo:first-of-type img { height: 300px; }
 }
