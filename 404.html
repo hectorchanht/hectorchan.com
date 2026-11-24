@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css?v=9">
 <style>
   :root { --bg: #0b0d12; --surface: #12151d; --text: #eceef4; --muted: #9aa1b5; --accent: #f5a623; --line: rgba(255,255,255,.08); --ease: cubic-bezier(0.22,1,0.36,1); }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -24,11 +25,34 @@
 </style>
 </head>
 <body>
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/">H<span class="accent">.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/#studio">Studio</a>
+      <a href="/#work">Apps</a>
+      <a href="/#hackathon">Hackathon</a>
+      <a href="/#about">About</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#contact">Contact</a>
+    </div>
+  </div>
+</nav>
   <main class="wrap">
     <img src="/assets/avatar-320.webp" alt="Hector Chan" width="64" height="64">
     <h1>This page is not here.</h1>
     <p>The link may be old, or the page may have moved. Everything I make is listed on the home page.</p>
     <a class="button" href="/">Back home</a>
   </main>
+<footer>
+  <div class="wrap">
+    <p>&copy; 2026 Hector &middot; hectorchan.com</p>
+    <p><a class="legal" href="/privacy.html">Privacy</a></p>
+  </div>
+</footer>
+<script src="/app.js?v=3" defer></script>
 </body>
 </html>
