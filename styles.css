@@ -89,6 +89,19 @@ a:hover { color: var(--accent); }
 .btn:hover { transform: translateY(-2px); color: #14100a; }
 .btn.ghost { background: transparent; color: var(--text); border-color: var(--line); }
 .btn.ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+.btn svg { width: 18px; height: 18px; vertical-align: -3px; margin-right: 0.45rem; }
+.btn.icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; }
+.btn.icon-btn svg { width: 20px; height: 20px; margin: 0; }
+
+/* icon-only links (fixed geometry — content never resizes the control) */
+.icon-link {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; flex: 0 0 36px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--text); text-decoration: none;
+  transition: border-color 0.15s, color 0.15s, transform 0.15s;
+}
+.icon-link svg { width: 20px; height: 20px; }
+.icon-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
 
 /* ---------- sections ---------- */
 .section { padding: clamp(4rem, 10vh, 6.5rem) 0; }
@@ -120,8 +133,8 @@ a:hover { color: var(--accent); }
 .feat { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.5rem; margin-bottom: 1.5rem; }
 .feat li { color: var(--muted); font-size: 1rem; padding-left: 1.4rem; position: relative; }
 .feat li::before { content: "→"; position: absolute; left: 0; color: var(--accent); }
-.card-links { display: flex; gap: 1.5rem; }
-.card-links a { font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+.card-links { display: flex; gap: 0.75rem; align-items: center; }
+.card-links a:not(.icon-link) { font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
 
 /* ---------- stats ---------- */
 .stats {
@@ -251,8 +264,8 @@ footer { padding: 2.5rem 0 3rem; color: var(--faint); font-size: 0.95rem; border
 .app-card h3 { font-size: 1.35rem; margin-bottom: 0.5rem; letter-spacing: -0.01em; }
 .app-card h3 a { text-decoration: none; }
 .app-card p { color: var(--muted); margin-bottom: 1rem; font-size: 1rem; }
-.app-card .card-links { display: flex; gap: 1.25rem; }
-.app-card .card-links a { font-size: 0.9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+.app-card .card-links { display: flex; gap: 0.75rem; align-items: center; }
+.app-card .card-links a:not(.icon-link) { font-size: 0.9rem; font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
 
 /* Redesign pass 2026-10-29 (adapted Dawn values): states, focus, menu motion */
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
